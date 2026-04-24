@@ -4,7 +4,7 @@ A modern, fully responsive portfolio website showcasing my web development skill
 
 ## 🌐 Live Demo
 
-👉 **[View Live Portfolio](https://rajatsharma0087.github.io/personal-portfolio/)**
+👉 **[View Live Portfolio](https://rajatsharma0087.github.io/-personal-portfolio/)**
 
 ## ✨ Features
 
