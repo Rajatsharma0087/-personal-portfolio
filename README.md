@@ -11,23 +11,26 @@ A modern, fully responsive portfolio website showcasing my web development skill
 ### Design & User Experience
 - **Responsive Design** - Seamlessly adapts to mobile, tablet, and desktop
 - **Modern UI/UX** - Clean, professional dark theme with gradient backgrounds
-- **Smooth Animations** - Hover effects, transitions, and smooth scrolling
-- **Interactive Elements** - Dynamic JavaScript-powered features
+- **Loading Screen** - Smooth loading animation on page load
+- **Typing Animation** - Dynamic hero text with rotating taglines
+- **Scroll Reveal** - Elements animate into view as you scroll
+- **Mobile Menu** - Animated hamburger menu for mobile devices
 
-### Technical Features
+### Interactive Features
 - **Form Validation** - Client-side validation with email format checking
 - **Visual Feedback** - Success/error messages for form submissions
 - **Smooth Scrolling** - Navigation with smooth scroll behavior
 - **Back-to-Top Button** - Automatically appears on scroll
-- **Hover Effects** - Enhanced card interactions
-- **Mobile Responsive** - Mobile-first design approach
+- **Skills Progress Bars** - Animated progress bars showing skill levels
+- **Project Filters** - Filter projects by technology (All/HTML-CSS/JavaScript)
+- **Hover Effects** - Enhanced card interactions throughout
 
-### Sections
-1. **Hero/Header** - Eye-catching introduction with call-to-action
-2. **About Me** - Professional background and introduction
-3. **Skills** - Technologies and tools I work with
-4. **Projects** - Portfolio showcase with live demos and code links
-5. **Contact** - Professional contact form with validation
+### Advanced JavaScript
+- **Typing Effect** - Auto-typing animation with multiple phrases
+- **Scroll Detection** - Reveals elements based on scroll position
+- **Progress Animation** - Skills bars animate when scrolled into view
+- **Dynamic Filtering** - Real-time project filtering
+- **Mobile Toggle** - Smooth hamburger menu animation
 
 ## 🛠️ Built With
 
