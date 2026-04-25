@@ -13,12 +13,27 @@
 </head>
 <body>
 
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loader">
+    <div class="spinner"></div>
+    <p>Loading Portfolio...</p>
+  </div>
+</div>
+
 <header>
   <h1>Rajat Sharma</h1>
-  <p>Web Developer | Turning Ideas into Websites</p>
+  <p>Web Developer | <span id="typed-text"></span><span class="cursor">|</span></p>
+  
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   
   <!-- Navigation Menu -->
-  <nav>
+  <nav class="main-nav">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -29,50 +44,106 @@
 </header>
 
 <section id="about">
-  <h2>About Me</h2>
+  <h2 class="reveal">About Me</h2>
   
-  <div class="about-image">
+  <div class="about-image reveal">
     <img src="https://ui-avatars.com/api/?name=Rajat+Sharma&size=200&background=38bdf8&color=0f172a&bold=true" alt="Rajat Sharma">
   </div>
   
-  <p>Hi, I'm Rajat Sharma, a web developer from Shimla, India. I specialize in building responsive, user-friendly websites using HTML, CSS, and JavaScript. I'm passionate about clean code and creating digital experiences that help businesses grow online.</p>
+  <p class="reveal">Hi, I'm Rajat Sharma, a web developer from Shimla, India. I specialize in building responsive, user-friendly websites using HTML, CSS, and JavaScript. I'm passionate about clean code and creating digital experiences that help businesses grow online.</p>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
+  <h2 class="reveal">Skills</h2>
   <div class="skills">
-    <div class="card">
+    <div class="card reveal reveal-delay-1">
       <h3>💻 Frontend</h3>
       <p>HTML5, CSS3, Flexbox, Responsive Design, Git & GitHub</p>
+      
+      <!-- Progress Bars -->
+      <div class="skill-progress">
+        <div class="skill-item">
+          <span>HTML5</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>CSS3</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="85"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card">
+    
+    <div class="card reveal reveal-delay-2">
       <h3>📚 Learning</h3>
       <p>JavaScript, React</p>
+      
+      <div class="skill-progress">
+        <div class="skill-item">
+          <span>JavaScript</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="70"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>React</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="30"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card">
+    
+    <div class="card reveal reveal-delay-3">
       <h3>🛠️ Tools</h3>
       <p>VS Code, GitHub, Chrome DevTools</p>
+      
+      <div class="skill-progress">
+        <div class="skill-item">
+          <span>Git & GitHub</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span>VS Code</span>
+          <div class="progress-bar">
+            <div class="progress" data-progress="85"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2 class="reveal">Projects</h2>
+  
+  <!-- Project Filter Buttons -->
+  <div class="project-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+  </div>
+  
   <div class="projects">
     
-    <div class="card">
+    <div class="card reveal reveal-left project-item" data-category="html-css javascript">
       <h3>🍃 Green Delight Restaurant</h3>
       <p>A modern vegetarian restaurant website with responsive design and interactive elements.</p>
-      <p><strong>Tech:</strong> HTML5, CSS3, Flexbox</p>
+      <p><strong>Tech:</strong> HTML5, CSS3, Flexbox, JavaScript</p>
       <div class="project-links">
         <a href="https://rajatsharma0087.github.io/green-delight-restaurant/" target="_blank" class="btn btn-small">View Live</a>
         <a href="https://github.com/Rajatsharma0087/green-delight-restaurant" target="_blank" class="btn btn-small">View Code</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal reveal-right project-item" data-category="html-css javascript">
       <h3>💼 Personal Portfolio</h3>
-      <p>My professional portfolio website showcasing my skills and projects.</p>
+      <p>My professional portfolio website showcasing my skills and projects with advanced animations.</p>
       <p><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
       <div class="project-links">
         <a href="https://rajatsharma0087.github.io/personal-portfolio/" target="_blank" class="btn btn-small">View Live</a>
@@ -80,7 +151,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal reveal-left project-item" data-category="html-css">
       <h3>☕ Coffee Shop Website</h3>
       <p>Coming soon... A modern coffee shop website with menu and ordering system.</p>
       <p><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
@@ -91,17 +162,17 @@
 </section>
 
 <section id="contact">
-  <h2>Contact Me</h2>
+  <h2 class="reveal">Contact Me</h2>
   
-  <div class="contact-info">
+  <div class="contact-info reveal">
     <p>📧 <strong>Email:</strong> <a href="mailto:rajatsharma8087@gmail.com">rajatsharma8087@gmail.com</a></p>
     <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/Rajatsharma0087" target="_blank">Rajatsharma0087</a></p>
     <p>🐦 <strong>Twitter:</strong> <a href="https://twitter.com/Rajatsharma_87" target="_blank">@Rajatsharma_87</a></p>
     <p>📍 <strong>Location:</strong> Shimla, India</p>
   </div>
 
-  <h3>Send Me a Message</h3>
-  <form>
+  <h3 class="reveal">Send Me a Message</h3>
+  <form class="reveal">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
